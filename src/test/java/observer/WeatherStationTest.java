@@ -1,5 +1,9 @@
 package observer;
 
+import observer.observer.CurrentConditionsDisplay;
+import observer.observer.ForecastDisplay;
+import observer.observer.StatisticsDisplay;
+import observer.subject.WeatherData;
 import org.junit.jupiter.api.Test;
 
 public class WeatherStationTest {
