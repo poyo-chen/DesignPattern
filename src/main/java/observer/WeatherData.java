@@ -1,13 +1,19 @@
 package observer;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class WeatherData implements Subject {
 
-  private List<Observer> observers;
+  private final List<Observer> observers;
   private float temperature;
   private float humidity;
   private float pressure;
+
+  public WeatherData() {
+    this.observers = new ArrayList<>();
+  }
+
 
   @Override
   public void registerObserver(Observer o) {
