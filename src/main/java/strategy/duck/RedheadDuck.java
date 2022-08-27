@@ -1,4 +1,4 @@
-package start.duck;
+package strategy.duck;
 
 public class RedheadDuck extends Duck {
 

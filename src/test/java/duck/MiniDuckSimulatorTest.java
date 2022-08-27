@@ -1,10 +1,10 @@
 package duck;
 
 import org.junit.jupiter.api.Test;
-import start.behavior.FlyRocketPowered;
-import start.duck.Duck;
-import start.duck.MallardDuck;
-import start.duck.ModelDuck;
+import strategy.behavior.FlyRocketPowered;
+import strategy.duck.Duck;
+import strategy.duck.MallardDuck;
+import strategy.duck.ModelDuck;
 
 public class MiniDuckSimulatorTest {
 

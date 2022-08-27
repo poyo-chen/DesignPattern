@@ -1,4 +1,4 @@
-package start.behavior;
+package strategy.behavior;
 
 public class FlyRocketPowered implements FlyBehavior {
 
