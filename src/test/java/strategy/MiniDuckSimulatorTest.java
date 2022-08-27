@@ -1,4 +1,4 @@
-package duck;
+package strategy;
 
 import org.junit.jupiter.api.Test;
 import strategy.behavior.FlyRocketPowered;
