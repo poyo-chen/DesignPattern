@@ -1,12 +1,14 @@
-package factory;
+package factory.store;
 
-public class PizzaStore {
+import factory.pizza.Pizza;
 
-  SinglePizzaFactory factory;
+public abstract class PizzaStore {
 
-  public PizzaStore(SinglePizzaFactory factory) {
-    this.factory = factory;
-  }
+//  SinglePizzaFactory factory;
+//
+//  public PizzaStore(SinglePizzaFactory factory) {
+//    this.factory = factory;
+//  }
 
   Pizza orderPizza(String type) {
 //    Pizza pizza=new Pizza();  現在必須依照種類生成正確的Pizza
@@ -20,7 +22,8 @@ public class PizzaStore {
 //      pizza = new PepperoniPizza();
 //    }
     Pizza pizza;
-    pizza = factory.createPizza(type);
+//    pizza = factory.createPizza(type);  由不同的披薩店決定可以製作的披薩種類
+    pizza = createPizza(type);
 
     pizza.prepare();
     pizza.bake();
@@ -28,4 +31,6 @@ public class PizzaStore {
     pizza.box();
     return pizza;
   }
+
+  abstract Pizza createPizza(String type);
 }
