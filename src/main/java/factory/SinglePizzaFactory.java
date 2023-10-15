@@ -1,10 +1,5 @@
 package factory;
 
-import factory.pizza.CheesePizza;
-import factory.pizza.GreekPizza;
-import factory.pizza.PepperoniPizza;
-import factory.pizza.Pizza;
-
 public class SinglePizzaFactory {
 
 //  public Pizza createPizza(String type) {

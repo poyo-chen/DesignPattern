@@ -5,8 +5,6 @@ import factory.ingredient.Dough;
 import factory.ingredient.Pepperoni;
 import factory.ingredient.Sauce;
 import factory.ingredient.Veggies;
-import java.util.ArrayList;
-import java.util.List;
 
 public abstract class Pizza {
 

@@ -1,11 +1,8 @@
 package factory.store;
 
-import factory.pizza.CheesePizza;
-import factory.pizza.GreekPizza;
 import factory.pizza.NYStyleCheesePizza;
 import factory.pizza.NYStyleGreekPizza;
 import factory.pizza.NYStylePepperoniPizza;
-import factory.pizza.PepperoniPizza;
 import factory.pizza.Pizza;
 
 public class NYPizzaStore extends PizzaStore {
