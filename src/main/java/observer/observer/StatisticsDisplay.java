@@ -8,7 +8,7 @@ public class StatisticsDisplay implements Observer, DisplayElement {
   private float minTemp = 200;
   private float tempSum = 0.0f;
   private int numReadings;
-  private final WeatherData weatherData;
+  WeatherData weatherData;
 
   public StatisticsDisplay(WeatherData weatherData) {
     this.weatherData = weatherData;
@@ -30,6 +30,19 @@ public class StatisticsDisplay implements Observer, DisplayElement {
     }
     if (temp < minTemp) {
       minTemp = temp;
+    }
+    display();
+  }
+
+  @Override
+  public void update() {
+    tempSum += weatherData.getTemperature();
+    numReadings++;
+    if (weatherData.getTemperature() > maxTemp) {
+      maxTemp = weatherData.getTemperature();
+    }
+    if (weatherData.getTemperature() < minTemp) {
+      minTemp = weatherData.getTemperature();
     }
     display();
   }
